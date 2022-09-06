@@ -1,0 +1,132 @@
+.project-modal {
+  width: 70%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 12vh;
+  left: 15vw;
+  max-width: 1000px;
+  height: max-content;
+  font-size: 12px;
+  display: flex;
+  padding: 1rem;
+  z-index: 100;
+  background-color: rgb(1, 1, 45);
+  border-radius: 10px;
+  flex-direction: column;
+  animation: bump 0.7s forwards;
+}
+
+.project-modal h3 {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.project-modal h3 a {
+  text-decoration: none;
+}
+.card {
+  width: 90%;
+  max-width: 800px;
+  height: 8rem;
+  margin: auto;
+  margin-top: 1rem;
+  overflow: hidden;
+
+  background-color: #25d366;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.tools {
+  color: #25d366;
+  font-weight: 600;
+}
+
+.project-modal__description {
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  color: white;
+}
+.project-modal__description p:last-of-type {
+  padding-top: 0.5rem;
+}
+.info {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  flex-direction: column;
+}
+.project-modal__controls {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.3rem;
+  justify-content: flex-end;
+}
+
+.project-modal__controls button {
+  padding: 0.4rem 1.5rem;
+  background-color: white;
+}
+.project-modal__controls a button {
+  background-color: #25d366;
+  margin-right: 0.5rem;
+}
+.project-modal__controls button:hover {
+  background-color: #25d366;
+  border: white;
+  color: white;
+}
+.project-modal__controls a button:active {
+  background-color: white;
+}
+
+.project-modal__controls button:last-of-type:active {
+  background-color: white;
+}
+.project-modal__controls button:active {
+  background-color: #25d366;
+}
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 900px) {
+  .project-modal {
+    left: 23vw;
+    width: 50%;
+    max-width: 700px;
+  }
+  .project-modal__description {
+    width: 90%;
+  }
+}
+@media (min-width: 1500px) {
+  .project-modal {
+    left: 30vw;
+  }
+  .project-modal__description {
+    width: 90%;
+  }
+}

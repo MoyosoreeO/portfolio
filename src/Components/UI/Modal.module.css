@@ -1,0 +1,110 @@
+.card {
+  font-size: 12px;
+  display: flex;
+  z-index: 100;
+  border-radius: 10px;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem 0.5rem;
+}
+.card img {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  padding-right: 0.2rem;
+}
+.card h5 {
+  font-size: 1.5em;
+  padding-bottom: 0.2rem;
+}
+.header {
+  border-bottom: 3px solid #25d366;
+}
+.card ul {
+  width: 80%;
+  margin: auto;
+}
+.card li {
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.card li:hover {
+  color: #25d366;
+  font-size: 1.3rem;
+}
+.card button {
+  padding: 0.3rem 2rem;
+  background-color: #25d366;
+}
+.card button:hover {
+  background-color: white;
+  color: #25d366;
+}
+.card li:first-of-type {
+  margin-top: 0.5rem;
+}
+.moreInfo {
+  position: absolute;
+  background-color: rgb(1, 1, 45);
+  bottom: -10rem;
+  height: max-content;
+  width: 85vw;
+  z-index: 1000;
+  box-sizing: border-box;
+  left: -1.5rem;
+
+  color: rgb(1, 1, 45);
+  box-sizing: border-box;
+  animation: drop 0.5s forwards;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 8px 16px 16px hsl(0deg, 0%, 0.39);
+}
+.moreInfo p {
+  padding: 1rem 1rem;
+  color: white;
+  font-size: 1em;
+  animation: slide-in 1.5s forwards;
+}
+
+.moreInfo button {
+  margin: 0.5rem 0 1.5rem 0rem;
+  width: 25%;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  align-self: center;
+  background-color: #25d366;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(4rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes drop {
+  0% {
+  }
+  70% {
+    transform: translateY(-4rem);
+  }
+  100% {
+    transform: translateY(1.5rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .moreInfo {
+    left: -1rem;
+  }
+}
+@media (max-width: 900px) {
+  .card li {
+    font-size: 1em;
+  }
+}

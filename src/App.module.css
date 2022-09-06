@@ -1,0 +1,15 @@
+.modal {
+  width: 80%;
+  position: sticky;
+  top: 10rem;
+  left: 10vw;
+  background-color: rgb(1, 1, 45);
+  color: white;
+  max-width: 1000px;
+  height: max-content;
+}
+@media (max-height: 550px) {
+  .modal {
+    top: 1rem;
+  }
+}

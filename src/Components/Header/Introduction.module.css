@@ -1,0 +1,80 @@
+.introduction {
+  width: 100%;
+  display: flex;
+  top: 7rem;
+  align-items: center;
+  height: 25rem;
+  z-index: 0;
+  background-color: #25d366;
+  position: relative;
+  overflow: hidden;
+  right: 0rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateZ(1deg) translateY(0rem) translateX(-0.3rem);
+}
+.avatar-container {
+  width: 30%;
+  height: 25rem;
+  z-index: 1;
+  overflow: hidden;
+}
+.avatar-container img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  animation: drop 4s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.typewriter {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+  color: goldenrod;
+  font-weight: 600;
+  font-family: inherit;
+}
+.typewriter::first-letter {
+  font-size: 2rem;
+}
+@keyframes drop {
+  0% {
+    transform: translateX(-1.5rem);
+  }
+  25% {
+    transform: translateX(-1rem);
+  }
+  50% {
+    transform: translateX(0rem);
+  }
+  75% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    transform: translateX(-1.5rem);
+  }
+}
+
+@media (max-width: 765px) {
+  .introduction {
+    height: 20rem;
+    margin-left: 0.6rem;
+  }
+  .avatar-container {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .typewriter {
+    font-size: 3.5rem;
+  }
+  .typewriter::first-letter {
+    font-size: 6rem;
+  }
+  .greet {
+    font-size: 2em;
+  }
+}

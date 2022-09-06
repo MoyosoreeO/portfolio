@@ -1,0 +1,28 @@
+.header {
+  background-color: #25d366;
+  padding: 1.5rem 0;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.header h5 {
+  font-size: 1.3em;
+  color: white;
+  animation: glow 1s ease-in-out 5 alternate;
+  -webkit-animation: glow 1s ease-in-out 5 alternate;
+  -moz-animation: glow 1s ease-in-out 5 alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px, 0 0 40px goldenrod,
+      0 0 50px goldenrod, 0 0 60px goldenrod, 0 0 70px goldenrod;
+    transform: translateX(-2rem);
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px goldenrod, 0 0 40px goldenrod,
+      0 0 50px goldenrod, 0 0 60px goldenrod, 0 0 70px goldenrod,
+      0 0 80px goldenrod;
+    transform: translateX(2rem);
+  }
+}

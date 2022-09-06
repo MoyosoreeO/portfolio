@@ -1,0 +1,88 @@
+.card {
+  padding: 1rem;
+  position: relative;
+  max-width: 80rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+  z-index: 10;
+
+  background-color: rgb(1, 1, 45);
+}
+.avatar-container {
+  margin: auto;
+  border-radius: 100%;
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  background-color: #25d366;
+}
+.card img {
+  height: 5.5rem;
+  animation: rotation 2s forwards linear;
+}
+.description {
+  width: 90%;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  border-top: 3px solid #25d366;
+  text-align: center;
+}
+.card p {
+  padding: 0;
+  padding-bottom: 1rem 0;
+  font-size: 16px;
+  animation: slide-in 2.7s forwards;
+}
+.card h3 {
+  padding-top: 0.7rem;
+  padding-right: 1.5rem;
+}
+.card-span {
+  float: left;
+  font-size: 2em;
+  margin-left: 1rem;
+  color: goldenrod;
+}
+
+.animation {
+  animation: opacity 0.7s ease-in-out;
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(4rem);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(340deg);
+  }
+}
+@keyframes opacity {
+  from {
+    filter: opacity(0%);
+  }
+  to {
+    filter: opacity(100%);
+  }
+}
+@media (max-width: 765px) {
+  .card {
+    margin-left: 1.5rem;
+    left: 0.5rem;
+  }
+  .card p {
+    font-size: 12px;
+  }
+}
